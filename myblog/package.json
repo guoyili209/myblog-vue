@@ -7,10 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
     "extract-loader": "^4.0.3",
     "jquery": "^3.4.1",
+    "jquery-easing": "0.0.1",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.stellar": "^0.6.2",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
@@ -22,8 +26,10 @@
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-plugin-vuex": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
+    "bootstrap-vue": "^2.6.1",
     "file-loader": "^5.1.0",
     "html-loader": "^0.5.5",
+    "qs": "^6.9.1",
     "vue-template-compiler": "^2.6.11"
   }
 }

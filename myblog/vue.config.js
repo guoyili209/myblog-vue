@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack=require('webpack')
 console.log(__dirname)
 module.exports = {
     configureWebpack: {
@@ -6,7 +7,8 @@ module.exports = {
             alias: {
                 'assets': '@/assets',
                 'components': '@/components',
-                'views': '@/views'
+                'views': '@/views',
+                'jquery':'jquery'
             }
         },
         module: {
@@ -33,6 +35,12 @@ module.exports = {
                     ]
                 }
             ]
-        }
+        },
+        plugins:[
+            new webpack.ProvidePlugin({
+                jQuery:"jquery",
+                $:"jquery"
+            })
+        ]
     }
 }
