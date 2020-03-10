@@ -5,13 +5,16 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/">博客
+          <b-nav-item to="/">
+            博客
             <!-- <router-link to="/">博客</router-link> -->
           </b-nav-item>
-          <b-nav-item to="/messageboard">留言板
+          <b-nav-item to="/messageboard">
+            留言板
             <!-- <router-link to="/messageboard">留言板</router-link> -->
           </b-nav-item>
-          <b-nav-item to="/curriculumvitae">简历
+          <b-nav-item to="/curriculumvitae">
+            简历
             <!-- <router-link to="/curriculumvitae">简历</router-link> -->
           </b-nav-item>
         </b-navbar-nav>

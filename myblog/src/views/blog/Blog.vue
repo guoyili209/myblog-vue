@@ -34,6 +34,11 @@
       allowfullscreen
       onmousewheel
     ></iframe>
+    <footer class="container">
+      <p class="foot">
+        <b-link href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19026289号-1</b-link>
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -48,8 +53,8 @@ export default {
     Accordion,
     AccordionItem
   },
-  props:{
-      currectSelectObj:Object
+  props: {
+    currectSelectObj: Object
   },
   data() {
     return {
@@ -59,10 +64,10 @@ export default {
   methods: {
     jumpPage(e, url) {
       //   console.log(this);
-      if(this.currectSelectObj&&this.currectSelectObj!=e.currentTarget){
-          this.currectSelectObj.classList.toggle("select");
+      if (this.currectSelectObj && this.currectSelectObj != e.currentTarget) {
+        this.currectSelectObj.classList.toggle("select");
       }
-      this.currectSelectObj=e.currentTarget;
+      this.currectSelectObj = e.currentTarget;
       var viewer = document.getElementById("viewer");
       //   window.location.hash = url;
       viewer.src = url;
@@ -80,4 +85,22 @@ export default {
 
 <style scoped>
 @import "~assets/css/blog.css";
+
+.foot {
+  position: fixed;
+  bottom: -1rem;
+  left: 10%;
+  font-size: 0.6rem;
+}
+.foot a {
+    color:rgb(155, 151, 151);
+}
+.foot a:hover {
+    color: rgb(160, 7, 7);
+}
+@media all and (max-width: 640px) {
+  .foot {
+    display: none;
+  }
+}
 </style>
