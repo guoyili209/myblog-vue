@@ -1,8 +1,17 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 import {BootstrapVue,IconsPlugin} from 'bootstrap-vue'
+import VueWaypoint from 'vue-waypoint'
+
+// Waypoint plugin
+Vue.use(VueWaypoint)
+
+
+
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)

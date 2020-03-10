@@ -9,31 +9,38 @@
       <h1>
         <a href="http://www.ylyz2019.top">Tick's博客</a>
       </h1>
-      <a id="expandButton" href="#">
+      <a id="expandButton" href="#" @click="panelToggleCss()">
         <span></span>
         <span></span>
         <span></span>
       </a>
       <div id="content" style="height: 80%;overflow: auto;">
-        <accordion>
-          <template v-for="(value,key) in pages">
-            <accordion-item :key="key">
-              <div slot="item-title">{{value.catecory}}</div>
-              <div v-for="(v,k) in value.content" :key="k">
-                <a :href="v.url" target="iviewer" @click="jumpPage(v.url)">{{v.title}}</a>
-              </div>
-            </accordion-item>
-          </template>
-        </accordion>
+        <!-- <accordion> -->
+        <template v-for="(value,key) in pages">
+          <accordion-item :key="key" v-bind:accordionItemID="key">
+            <div slot="item-title">{{value.catecory}}</div>
+            <div v-for="(v,k) in value.content" :key="k">
+              <a :href="v.url" target="iviewer" @click="jumpPage($event,v.url)">{{v.title}}</a>
+            </div>
+          </accordion-item>
+        </template>
+        <!-- </accordion> -->
       </div>
     </div>
-    <iframe id="viewer" name="iviewer" allowfullscreen onmousewheel></iframe>
+    <iframe
+      src="pages/webclient/htmllearn.html"
+      id="viewer"
+      name="iviewer"
+      allowfullscreen
+      onmousewheel
+    ></iframe>
   </div>
 </template>
 
 <script>
 import Accordion from "components/collapsible/Accordion.vue";
 import AccordionItem from "components/collapsible/AccordionItem.vue";
+import pagesConfig from "./pages";
 
 export default {
   name: "Blog",
@@ -41,28 +48,31 @@ export default {
     Accordion,
     AccordionItem
   },
+  props:{
+      currectSelectObj:Object
+  },
   data() {
     return {
-      pages: [
-        {
-          catecory: "Web客户端",
-          content: [
-            { title: "html教程", url: "pages/webclient/htmllearn.html" },
-            { title: "gulp教程", url: "pages/webclient/learngulp.html" },
-            { title: "vuex官方教程笔记", url: "pages/webclient/vuexlearn.html" },
-            { title: "js教程", url: "pages/webclient/jslearn.html" }
-          ]
-        }
-      ]
+      pages: pagesConfig
     };
   },
   methods: {
-    jumpPage(url) {
-        console.log(url);
+    jumpPage(e, url) {
+      //   console.log(this);
+      if(this.currectSelectObj&&this.currectSelectObj!=e.currentTarget){
+          this.currectSelectObj.classList.toggle("select");
+      }
+      this.currectSelectObj=e.currentTarget;
       var viewer = document.getElementById("viewer");
-    //   window.location.hash = url;
+      //   window.location.hash = url;
       viewer.src = url;
       viewer.focus();
+      e.currentTarget.classList.toggle("select");
+    },
+    panelToggleCss() {
+      var panel = document.getElementById("panel");
+      panel.classList.toggle("collapsed");
+      event.preventDefault();
     }
   }
 };

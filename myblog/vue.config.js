@@ -1,5 +1,5 @@
 var path = require('path')
-var webpack=require('webpack')
+// var webpack=require('webpack')
 console.log(__dirname)
 module.exports = {
     configureWebpack: {
@@ -35,12 +35,12 @@ module.exports = {
                     ]
                 }
             ]
-        },
-        plugins:[
-            new webpack.ProvidePlugin({
-                jQuery:"jquery",
-                $:"jquery"
-            })
-        ]
+        }
+        // plugins:[
+        //     new webpack.ProvidePlugin({
+        //         jQuery:"jquery",
+        //         $:"jquery"
+        //     })
+        // ]
     }
 }

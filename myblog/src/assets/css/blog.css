@@ -21,9 +21,6 @@ body {
     margin: 0px;
     height: 100%;
     color: #555;
-    font-family: 'inconsolata';
-    font-size: 15px;
-    line-height: 18px;
     overflow: hidden;
 }
 
@@ -40,14 +37,38 @@ h2 {
     font-weight: normal;
 }
 
-a {
+#panel h1 a,.card-text a {
     color: #2194ce;
-    text-decoration: none;
 }
+.select {
+    color: #990101!important;
+  }
+/* .navbar-nav a{
+    color: #ffffff;
+}
+.navbar-nav a:hover{
+    color: #ffffff;
+} */
+/* .card-text a:link {
+    color: #2194ce;
+}
+.card-text a:visited {
+    color: #990101;
+}
+.card-text a:hover {
+    text-decoration: underline;
+} */
+/* .card-text a:active {
+    color: #ff0000;
+} */
 
+iframe{
+    top:3rem
+}
 #panel {
     position: fixed;
     left: 0px;
+    top:3rem;
     width: 310px;
     height: 100%;
     overflow: auto;

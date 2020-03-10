@@ -5,7 +5,7 @@
 */
 <template>
   <div>
-    <section id="leaveMessage">
+    <section id="leaveMessage" style="margin:4rem;">
       <div class="container">
         <div class="text-center msgboardTop title">
           <h5>

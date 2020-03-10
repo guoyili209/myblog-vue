@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.4",
     "extract-loader": "^4.0.3",
     "jquery": "^3.4.1",
@@ -22,14 +23,23 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.7.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-plugin-vuex": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
+    "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.6.1",
     "file-loader": "^5.1.0",
     "html-loader": "^0.5.5",
+    "mutationobserver-shim": "^0.3.3",
+    "popper.js": "^1.16.0",
+    "portal-vue": "^2.1.6",
     "qs": "^6.9.1",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-bootstrap-vue": "~0.6.0",
+    "vue-template-compiler": "^2.6.11",
+    "vue-waypoint": "^3.4.1"
   }
 }
