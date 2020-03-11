@@ -62,10 +62,6 @@ h2 {
     color: #ff0000;
 } */
 
-iframe{
-    top:3rem;
-    height: 50%;
-}
 #panel {
     position: fixed;
     left: 0px;
@@ -104,6 +100,7 @@ iframe{
     width: calc(100% - 310px);
     height: 95%;
     overflow: auto;
+    top:3rem;
 }
 
 #button {

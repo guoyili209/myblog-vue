@@ -20,7 +20,12 @@
           <accordion-item :key="key" v-bind:accordionItemID="key">
             <div slot="item-title">{{value.catecory}}</div>
             <div v-for="(v,k) in value.content" :key="k">
-              <a :href="v.url" target="iviewer" @click="jumpPage($event,v.url)">{{v.title}}</a>
+              <a
+                :class="{select:v.title=='html教程'}"
+                :href="v.url"
+                target="iviewer"
+                @click="jumpPage($event,v.url)"
+              >{{v.title}}</a>
             </div>
           </accordion-item>
         </template>
@@ -34,8 +39,9 @@
       allowfullscreen
       onmousewheel
     ></iframe>
-    <footer class="container">
-      <p class="foot">
+    <footer class="container-fluid foot">
+      <p style="color:#ababab;">
+        ©2019-2020 ylyz2019.top
         <b-link href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19026289号-1</b-link>
       </p>
     </footer>
@@ -43,31 +49,36 @@
 </template>
 
 <script>
-import Accordion from "components/collapsible/Accordion.vue";
 import AccordionItem from "components/collapsible/AccordionItem.vue";
 import pagesConfig from "./pages";
 
 export default {
   name: "Blog",
   components: {
-    Accordion,
     AccordionItem
   },
   props: {
-    currectSelectObj: Object
+    // currectSelectObj: Object
+  },
+  computed: {
+    curSelectDomPageObj: {
+      get: function() {
+        return this.currectSelectObj;
+      },
+      set: function(val) {
+        this.currectSelectObj = val;
+      }
+    }
   },
   data() {
     return {
-      pages: pagesConfig
+      pages: pagesConfig,
+      currectSelectObj: null
     };
   },
   methods: {
     jumpPage(e, url) {
-      //   console.log(this);
-      if (this.currectSelectObj && this.currectSelectObj != e.currentTarget) {
-        this.currectSelectObj.classList.toggle("select");
-      }
-      this.currectSelectObj = e.currentTarget;
+      document.getElementsByClassName("select")[0].classList.toggle("select");
       var viewer = document.getElementById("viewer");
       //   window.location.hash = url;
       viewer.src = url;
@@ -78,6 +89,9 @@ export default {
       var panel = document.getElementById("panel");
       panel.classList.toggle("collapsed");
       event.preventDefault();
+    },
+    getMsg(data) {
+      console.log(data);
     }
   }
 };
@@ -87,16 +101,23 @@ export default {
 @import "~assets/css/blog.css";
 
 .foot {
-  position: fixed;
+  position: absolute;
   bottom: -1rem;
-  left: 10%;
   font-size: 0.6rem;
+  height: 2rem;
+  width: 100%;
+  background-color: #555;
+}
+.foot p {
+  color: #ababab;
+  text-align: center;
 }
 .foot a {
-    color:rgb(155, 151, 151);
+  color: #ababab;
 }
 .foot a:hover {
-    color: rgb(160, 7, 7);
+  color: rgb(230, 225, 225);
+  text-decoration: none;
 }
 @media all and (max-width: 640px) {
   .foot {

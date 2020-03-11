@@ -33,7 +33,7 @@
           </div>
           <div class="text-center">
             <!-- <div class="col-md-6 col-lg-6 col-xl-6"> -->
-            <p class="lead">H5游戏/Flash网页游戏/Web前端开发工程师</p>
+            <p class="lead">Web前端/H5游戏/Flash页游开发工程师</p>
             <p class="mb-5">
               1、两年Html5游戏开发经验，5年页游开发经验；
               <br />2、熟悉html/js/css等相关web前端和游戏开发技术；
@@ -157,7 +157,7 @@
                 <a href="https://www.dkmol.com/" target="_blank">成都哆可梦网络科技有限公司</a>
                 <span class="block-47-quote-author">H5游戏开发工程师</span>
                 <p>
-                  2018/7-至今
+                  2018/7-2020/2
                   <br />主要负责基于Laya引擎的H5游戏开发，参与了《幻想大乱斗》、《圣域战神》两个H5游戏项目的开发。
                 </p>
                 <p>
@@ -344,7 +344,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《幻想大乱斗H5》"
-                  @click="showMsgBoxTwo('《幻想大乱斗H5》',w5)"
+                  @click="showMsgBoxTwo('《幻想大乱斗H5》',p5)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -365,7 +365,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《圣域战神H5》"
-                  @click="showMsgBoxTwo('《圣域战神H5》',w5)"
+                  @click="showMsgBoxTwo('《圣域战神H5》',p4)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -386,7 +386,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《魔王の始め方H5》"
-                  @click="showMsgBoxTwo('《魔王の始め方H5》',w5)"
+                  @click="showMsgBoxTwo('《魔王の始め方H5》',p3)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -407,7 +407,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《拳皇98终极之战Web》"
-                  @click="showMsgBoxTwo('《拳皇98终极之战Web》',w5)"
+                  @click="showMsgBoxTwo('《拳皇98终极之战Web》',p2)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -428,7 +428,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《足坛教父》"
-                  @click="showMsgBoxTwo('《足坛教父》',w5)"
+                  @click="showMsgBoxTwo('《足坛教父》',p1)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -453,7 +453,7 @@
                   data-target="#modalCV"
                   data-mycv="my project"
                   data-title="《梦之队》"
-                  @click="showMsgBoxTwo('《梦之队》',w5)"
+                  @click="showMsgBoxTwo('《梦之队》',p_1)"
                 >
                   了解更多
                   <i class="icon-chevron-right"></i>
@@ -467,7 +467,7 @@
               <h3 class="mb-4">合金大作战</h3>
               <p>一款正版合金弹头授权游戏，游戏将原版角色英雄化，赋予不同职业和属性，由玩家自主搭配不同阵型组合，进行横版闯关的动作游戏。玩法为ARPG类型。</p>
               <p>
-                <span id="p1" class="site-link modalOpen" @click="showMsgBoxTwo('《合金大作战》',w5)">
+                <span id="p1" class="site-link modalOpen" @click="showMsgBoxTwo('《合金大作战》',p_2)">
                   了解更多
                   <i class="icon-chevron-right"></i>
                 </span>
@@ -667,38 +667,31 @@ export default {
       p3: (
         <pre>
           项目描述：{"\n"}
-          1、游戏拥有日本SNK正版授权，是一款格斗竞技类游戏。{"\n"}
-          2、人员构成为前端9人，后端8人,引擎5人，策划约20人，美术约40人，合计80人左右。
+          1、游戏为日本DMM公司PC端H5游戏，我们负责将其移植到手机上。{"\n"}
+          2、人员我方前端2人，其余人员均为为日本公司提供，我们主要通过github进行协同开发。
           {"\n"}
-          3、游戏曾先后上线腾讯、7k7k、4399、西游网等国内多个平台，以及游族海外平台GTArcade，目前游戏已下架。
+          3、游戏目前处于上线运营状态，需要翻墙用日本vpn才能登陆DMM平台。
           {"\n"}
           项目职责：{"\n"}
-          我于2016年3月进入项目组，是第三名进入项目组的程序，属于核心开发成员;
-          {"\n"}
-          1、在引擎开发期间，主要负责引擎AI 部分底层设计与开发，以及AI
-          编辑器的全部功能和剧情编辑器的部分功能开发；{"\n"}
-          2、在demo 开发期间，主要负责基础战斗AI 的开发；{"\n"}
-          3、在游戏立项后，主要负责战斗、关卡中的AI；{"\n"}
-          4、在游戏开发后期，主要负责AI 维护，以及部分战斗功能，和其他PVE
-          系统、商业系统等开发。
+          我于2018年4月进入项目组，后续主要负责利用html/css/js将游戏适配到手机上。
         </pre>
       ),
       p2: (
         <pre>
           项目描述：{"\n"}
-          1、游戏拥有西班牙足球甲级联赛正版授权，是一款模拟经营类游戏，玩家扮演一名足球经理，经营自己的球队。
+          1、游戏拥有日本SNK正版授权，是一款格斗竞技类游戏。
           {"\n"}
-          2、游戏框架采用公司另一个已盈利游戏《胜利足球》的框架;{"\n"}
-          3、人员构成为前端3人，后端3人，策划4人，美术5人，合计15人左右。{"\n"}
-          4、游戏上线公司自有平台后，数据不理想，以及后期项目内部问题，导致游戏没有推广。
+          2、人员构成为前端9人，后端8人,引擎5人，策划约20人，美术约40人，合计80人左右。{"\n"}
+          3、游戏曾先后上线腾讯、7k7k、4399、西游网等国内多个平台，以及游族海外平台GTArcade，目前游戏已下架。{"\n"}
           {"\n"}
           项目职责：{"\n"}
-          我于2015年7月进入项目组，后续主要负责：{"\n"}
-          1、在开发初期，我主要负责熟悉和使用框架；{"\n"}
-          2、后续发现游戏的UI开发非常麻烦，没有可视化编辑器，遂结合之前项目的经验，为框架引入了starlingswf工具库作为可视化UI编辑器，大大简化和提高了游戏的UI开发效率;
+          我于2016年3月进入项目组，是第三名进入项目组的程序，属于核心开发成员;{"\n"}
+          1、在引擎开发期间，主要负责引擎AI 部分底层设计与开发，以及AI 编辑器的全部功能和剧情编辑器的部分功能开发；{"\n"}
+          2、在demo 开发期间，主要负责基础战斗AI 的开发；
           {"\n"}
-          3、扩展开发后，我主要负责多个游戏系统开发，比如俱乐部比赛、球员培养、寻宝等若干系统。
+          3、在游戏立项后，主要负责战斗、关卡中的AI；
           {"\n"}
+          4、在游戏开发后期，主要负责AI 维护，以及部分战斗功能，和其他PVE 系统、商业系统等开发。
         </pre>
       ),
       p1: (
@@ -713,7 +706,7 @@ export default {
           项目职责：{"\n"}
           我于2015年7月进入项目组，后续主要负责：{"\n"}
           1、在开发初期，我主要负责熟悉和使用框架；{"\n"}
-          2、后续发现游戏的UI开发非常麻烦，没有可视化编辑器，遂结合之前项目的经验，为框架引入了starlingswf工具库作为可视化UI编辑器，大大简化和提高了游戏的UI开发效率;
+          2、为框架引入了可视化UI编辑器，大大简化和提高了游戏的UI开发效率;
           {"\n"}
           3、扩展开发后，我主要负责多个游戏系统开发，比如俱乐部比赛、球员培养、寻宝等若干系统。
           {"\n"}
@@ -733,12 +726,12 @@ export default {
       p_2: (
         <pre>
           项目描述：{"\n"}
-          1、游戏为日本DMM公司PC端H5游戏，我们负责将其移植到手机上。{"\n"}
-          2、人员我方前端2人，其余人员均为为日本公司提供，我们主要通过github进行协同开发。
+          1、项目拥有合金弹头正版IP，是一款横版推搭游戏。{"\n"}
+          2、人员构成为前端4人，后端4人，策划6人，美术8人，合计22人左右。
           {"\n"}
-          3、游戏目前处于上线运营状态，需要翻墙用日本vpn才能登陆DMM平台。{"\n"}
+          3、游戏首次后，数据均不理想，后续，公司决定不推广。{"\n"}
           项目职责：{"\n"}
-          我于2018年4月进入项目组，后续主要负责利用html/css/js将游戏适配到手机上。
+          我于2013年9月进入项目组，后续主要负责页游常用系统功能开发，如角色培养、签到、寻宝等系统。
           {"\n"}
         </pre>
       ),

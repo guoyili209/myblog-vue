@@ -9,7 +9,7 @@
       <slot name="item-title"></slot>
     </b-button>
     <!-- :visible="!accordion_ItemID" -->
-    <b-collapse v-bind:id="accordion_ItemID+''" visible role="tabpanel">
+    <b-collapse v-bind:id="accordion_ItemID+''" visible>
       <b-card-body>
         <b-card-text>
           <slot></slot>
@@ -26,7 +26,8 @@ export default {
     accordionItemID: {
       type: Number,
       default: 1
-    }
+    },
+    title:String
   },
   data() {
     return {
