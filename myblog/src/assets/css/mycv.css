@@ -161,7 +161,7 @@ body {
   .progress .progress-bar span{
     background-color: #57d131;
     position:absolute;
-    margin:20px;
+    margin:20px 100px;
     font-size: 10px;
     line-height: 10px;
     padding: 2px 3px 2px 4px;
@@ -340,4 +340,17 @@ body {
   .modal-body pre{
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
+
+  @media all and (max-width:640px){
+    .progress .progress-bar span{
+        background-color: #57d131;
+        position:absolute;
+        margin:20px 100px;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 2px 3px 2px 4px;
+        right:-7em;
+        border-radius: 2px;
+      }
   }

@@ -39,7 +39,7 @@
       allowfullscreen
       onmousewheel
     ></iframe>
-    <footer class="container-fluid foot">
+    <footer class="foot">
       <p style="color:#ababab;">
         ©2019-2020 ylyz2019.top
         <b-link href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19026289号-1</b-link>
@@ -102,15 +102,16 @@ export default {
 
 .foot {
   position: absolute;
-  bottom: -1rem;
+  bottom: 0;
   font-size: 0.6rem;
-  height: 2rem;
   width: 100%;
   background-color: #555;
+  line-height: 1rem;
 }
 .foot p {
   color: #ababab;
   text-align: center;
+  margin:1px auto;
 }
 .foot a {
   color: #ababab;

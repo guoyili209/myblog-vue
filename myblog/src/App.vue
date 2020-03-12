@@ -25,7 +25,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.hashJump();
+    window.addEventListener(
+      "hashchange",
+      () => {
+        this.hashJump();
+      },
+      false
+    );
+  },
+  methods: {
+    hashJump() {
+      var currentPath = window.location.hash.slice(1); // 获取输入的路由
+      if (this.$router.path !== currentPath) {
+        this.$router.push(currentPath); // 动态跳转
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>

@@ -14,7 +14,7 @@
               class="site-heading site-animate"
               ref="siteanimate"
             >Hello!我是郭一力</h1>
-            <p class="lead mb-4 site-subheading site-animate">- Html5 游戏/Web开发工程师 -</p>
+            <p class="lead mb-4 site-subheading site-animate">- Web应用/游戏开发工程师 -</p>
             <p>
               <a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">更 多</a>
             </p>
@@ -47,7 +47,7 @@
               <a href="http://www.ylyz2019.top" target="_blank">www.ylyz2019.top</a>
               <br />个人在线简历：
               <a
-                href="http://www.ylyz2019.top/cv/index.html"
+                href="http://www.ylyz2019.top/#curriculumvitae"
                 target="_blank"
               >www.ylyz2019.top/cv/</a>
               <br />个人H5游戏Demo：
@@ -563,7 +563,7 @@
                 </p>
                 <p class="mb-4">
                   简历下载:
-                  <a id="downloadCV" href="#" target="_blank" @click="downloadCV()">download</a>
+                  <a id="downloadCV" href="assets/mycv.pdf" target="_blank" download = "郭一力的简历.pdf">download</a>
                 </p>
               </div>
             </div>
