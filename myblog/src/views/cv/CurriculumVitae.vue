@@ -33,32 +33,32 @@
           </div>
           <div class="text-center">
             <!-- <div class="col-md-6 col-lg-6 col-xl-6"> -->
-            <p class="lead">Web前端/H5游戏/Flash页游开发工程师</p>
+            <p class="lead">Web前端/Html游戏/Flash游戏开发工程师</p>
             <p class="mb-5">
-              1、两年Html5游戏开发经验，5年页游开发经验；
+              1、两年Html游戏开发经验，5年flash游戏开发经验；
               <br />2、熟悉html/js/css等相关web前端和游戏开发技术；
               <br />3、全程参与过千万级大型项目开发，以及多个中小型项目开发；
-              <br />4、能胜任项目管理、客户端主程、客户端高级开发等职位。
+              <br />4、能胜任项目管理、客户端高级开发等职位。
               <br />
             </p>
             <!-- </div> -->
             <p>
               个人博客：
-              <a href="http://www.ylyz2019.top" target="_blank">www.ylyz2019.top</a>
+              <a href="http://www.ylyz2019.top" target="_blank">我的博客</a>
               <br />个人在线简历：
               <a
                 href="http://www.ylyz2019.top/#curriculumvitae"
                 target="_blank"
-              >www.ylyz2019.top/cv/</a>
-              <br />个人H5游戏Demo：
+              >我的简历</a>
+              <br />个人Html游戏Demo：
               <a
                 href="http://www.ylyz2019.top/game/realase/"
                 target="_blank"
-              >基于H5的3D角色2D场景游戏演示</a>
+              >基于WebGL的3D角色2D场景游戏演示</a>
               <br />
-              <a href="http://www.ylyz2019.top/game/release2/web/" target="_blank">基于H5的3D游戏演示</a>
-              <br />上线游戏:
-              <a href="http://www.4399.com/flash/207239.htm" target="_blank">幻想大乱斗H5</a>、
+              <a href="http://www.ylyz2019.top/game/release2/web/" target="_blank">基于WebGL的3D游戏演示</a>
+              <br />线上游戏展示:
+              <a href="http://www.4399.com/flash/207239.htm" target="_blank">幻想大乱斗</a>、
               <a href="http://qqapp.qq.com/app/28238.html" target="_blank">梦之队</a>
             </p>
           </div>
