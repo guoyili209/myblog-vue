@@ -6,10 +6,12 @@ export default [
             { title: "html5教程", url: "pages/webclient/learnhtml5.html" },
             { title: "js教程", url: "pages/webclient/jslearn.html" },
             { title: "es6相关", url: "pages/webclient/es6related.html" },
+            { title: "ts相关", url: "pages/webclient/typescriptlearn.html" },
             { title: "css教程", url: "pages/webclient/learncss.html" },
             { title: "css3教程", url: "pages/webclient/learncss3.html" },
             { title: "bootstrap教程", url: "pages/webclient/bootstrap.html" },
             { title: "vuejs教程", url: "pages/webclient/vuejs.html" },
+            { title: "vue官方风格指南", url: "pages/webclient/vuestyle.html" },
             { title: "vuex官方教程笔记", url: "pages/webclient/vuexlearn.html" },
             { title: "vuex教程", url: "pages/webclient/vuexlearn2.html" },
             { title: "router教程", url: "pages/webclient/learnvuerouter.html" },
@@ -21,16 +23,18 @@ export default [
     {
         catecory: "Web前端面试笔试相关",
         content: [
-            {
-                title: "Web前端面试/笔试汇总",
-                url: "pages/exam/client/examclient.html"
-            }
+            { title: "Web前端面试/笔试汇总", url: "pages/exam/client/examclient.html" },
+            { title: "Web前端面试/笔试2", url: "pages/exam/client/batexam.html" },
+            { title: "css相关", url: "pages/exam/client/cssexam.html" },
+            { title: "性能相关", url: "pages/exam/client/performance.html" }
         ]
     },
     {
         catecory: "Server",
         content: [
-            { title: "nodejs教程", url: "pages/webserver/learnnodejs.html" }
+            { title: "nodejs教程", url: "pages/webserver/learnnodejs.html" },
+            { title: "vue服务端渲染(SSR)官方教程笔记", url: "pages/webserver/vuessr.html" },
+            { title: "Nuxt.js框架", url: "pages/webserver/nuxtlearn.html" }
         ]
     },
     {
