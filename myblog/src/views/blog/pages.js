@@ -26,7 +26,8 @@ export default [
             { title: "Web前端面试/笔试汇总", url: "pages/exam/client/examclient.html" },
             { title: "Web前端面试/笔试2", url: "pages/exam/client/batexam.html" },
             { title: "css相关", url: "pages/exam/client/cssexam.html" },
-            { title: "性能相关", url: "pages/exam/client/performance.html" }
+            { title: "性能相关", url: "pages/exam/client/performance.html" },
+            { title: "H5主程相关", url: "pages/exam/client/h5game1.html" }
         ]
     },
     {
